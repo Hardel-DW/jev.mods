@@ -3,31 +3,21 @@
 	"id": "jev",
 	"version": "${version}",
 	"name": "Jev",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Server-side bots played by TypeSafe's Jev for the reflexes and an LLM for the strategy: fake players with real physics, senses limited to what a human would perceive, and one goal, finish the game.",
 	"authors": [
-		"Me!"
+		"Hardel"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
 	"license": "CC0-1.0",
 	"icon": "assets/jev/icon.png",
+	"accessWidener": "jev.accesswidener",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fr.hardel.Jev"
-		],
-		"client": [
-			"fr.hardel.client.JevClient"
+			"fr.hardel.jev.Jev"
 		]
 	},
 	"mixins": [
-		"jev.mixins.json",
-		{
-			"config": "jev.client.mixins.json",
-			"environment": "client"
-		}
+		"jev.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",

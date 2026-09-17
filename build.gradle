@@ -12,14 +12,7 @@ repositories {
 }
 
 loom {
-	splitEnvironmentSourceSets()
-
-	mods {
-		"jev" {
-			sourceSet sourceSets.main
-			sourceSet sourceSets.client
-		}
-	}
+	accessWidenerPath = file('src/main/resources/jev.accesswidener')
 }
 
 dependencies {
